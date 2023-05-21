@@ -1,0 +1,74 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/bg_air">
+
+	<View
+		android:id="@+id/ellipse_15"
+		android:layout_width="250dp"
+		android:layout_height="250dp"
+		android:background="@drawable/ellipse_15_shape"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.496"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="0.844" />
+
+	<View
+		android:id="@+id/ellipse_16"
+		android:layout_width="100dp"
+		android:layout_height="100dp"
+		android:background="@drawable/ellipse_16_shape"
+		app:layout_constraintBottom_toBottomOf="@+id/ellipse_15"
+		app:layout_constraintEnd_toEndOf="@+id/ellipse_15"
+		app:layout_constraintStart_toStartOf="@+id/ellipse_15"
+		app:layout_constraintTop_toTopOf="@+id/ellipse_15"
+		tools:ignore="MissingConstraints" />
+
+	<TextView
+		android:id="@+id/text"
+		android:layout_width="304dp"
+		android:layout_height="81dp"
+		android:gravity="center"
+		android:text="Начать"
+		android:fontFamily="@font/fr"
+		android:textSize="50sp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.495"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="0.213" />
+
+	<TextView
+		android:id="@+id/text1"
+		android:layout_width="160dp"
+		android:layout_height="57dp"
+		android:gravity="center"
+		android:textSize="40sp"
+		app:layout_constraintBottom_toTopOf="@+id/ellipse_15"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.498"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/text"
+		app:layout_constraintVertical_bias="0.132" />
+
+	<ImageView
+		android:id="@+id/polygon_1"
+		android:layout_width="69dp"
+		android:layout_height="59dp"
+		android:clickable="true"
+		android:contentDescription="polygon_1"
+		android:onClick="back"
+		android:src="@drawable/polygon_1"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.032"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="0.023" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,70 @@
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/motion"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	app:layoutDescription="@xml/homescreen_scene">
+
+	<View
+		android:id="@+id/_bg__homescreen_ek2"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@drawable/_bg__homescreen_ek2_shape"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+	<RelativeLayout
+		android:id="@+id/group_1"
+		android:layout_width="472dp"
+		android:layout_height="798dp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		tools:layout_editor_absoluteX="-26dp">
+
+		<ImageView
+			android:id="@+id/group2"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:contentDescription="group"
+			android:src="@drawable/group" />
+	</RelativeLayout>
+
+	<ImageView
+		android:id="@+id/__img_group_25"
+		android:layout_width="405dp"
+		android:layout_height="866dp"
+		android:contentDescription="img25"
+		android:src="@drawable/img25" />
+
+	<ImageView
+		android:id="@+id/ellipse_1"
+		android:layout_width="315dp"
+		android:layout_height="wrap_content"
+		android:contentDescription="ellipse_1"
+		android:src="@drawable/ellipse_1"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="@+id/_bg__homescreen_ek2"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="0.59000003" />
+
+	<Button
+		android:id="@+id/button"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="8dp"
+		android:background="#00FFFFFF"
+		android:text="Начать"
+		android:fontFamily="@font/fr"
+		android:textStyle="bold"
+		android:textColor="#7186EA"
+		android:textSize="24sp"
+		app:layout_constraintBottom_toBottomOf="@+id/ellipse_1"
+		app:layout_constraintEnd_toEndOf="@+id/ellipse_1"
+		app:layout_constraintStart_toStartOf="@+id/ellipse_1"
+		app:layout_constraintTop_toTopOf="@+id/ellipse_1"
+		app:layout_constraintVertical_bias="0.26999998" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

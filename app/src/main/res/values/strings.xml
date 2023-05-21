@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- homescreen strings -->
+
+	<string name="app_name">Stay calm</string>
+	<string name="ek_img_content">ExportKit Image</string>
+	<string name="start_string">Start</string>
+</resources>
